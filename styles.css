@@ -1,0 +1,145 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e1e1e;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+#game-container {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#game-image {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#title-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #3498db;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    fill: #ffffff;
+}
+
+.bar {
+    flex-grow: 1;
+    height: 10px;
+    background-color: #3a3a3a;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background-color: #3498db;
+    transition: width 0.3s ease;
+}
+
+.value {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+#card-container {
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+#year {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+#choice-text, #consequence-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+button {
+    background-color: #3498db;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 480px) {
+    #game-container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p, #choice-text, #consequence-text {
+        font-size: 14px;
+    }
+
+    .stat {
+        width: 100%;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
